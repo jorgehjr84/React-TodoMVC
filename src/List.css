@@ -1,0 +1,45 @@
+.List li {
+    list-style: none;
+}
+.todo-item{
+    text-align: left;
+    width: 90%;
+    display: inline-block;
+    position: relative;
+}
+.todo-checkbox {
+    width: 2em;
+    height: 2em;
+    margin-right: 2em;    
+    position: relative;
+    top: .7em;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: lightgray;
+}
+.checkBoxCompleted {
+    opacity: .5;
+}
+
+.todo-item:hover .todo-item-button{
+    color: #cc9a9a;
+}
+
+.todo-item-button {
+    background-color: #fff;
+    border: none;
+    color: #fff;
+    font-size: 23px;
+    height: 40px;
+    right: 0;
+    position: absolute;
+    top: .1em;
+    transition: color 0.1s ease-out;
+    width: 40px;
+}
+
+.todo-checkbox:checked + .todo-label {
+    text-decoration: line-through;
+}
